@@ -1,0 +1,229 @@
+.corpo {
+    transition: background-color .8s;
+    background-color: #f2c849;
+    cursor: ;
+    overflow: overlay;
+    font-family: monospace;
+    margin: 0px;
+    overflow-x: hidden;
+    background-image: url();
+    position: static;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+  
+    }
+  
+    .corpo::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    
+    .corpo::-webkit-scrollbar-track {
+      display: none;
+    }
+    
+    .corpo::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: rgb(255, 255, 255) ;
+    }
+    ::-webkit-scrollbar-thumb:hover{
+      background-color: #f2c849;
+    }
+    
+    .header {
+      width: 100%;
+      height: 100px;
+      align-items: center;
+      box-shadow: 0px 5px 5px black;
+      position: fixed;
+      z-index: 200;
+      background-color: #DAA520;
+    }
+    
+    .logo_header {
+      height: 70px;
+      width: 235px;
+      margin-top: 20px;
+      margin-left: 80px;
+      margin-bottom: 20px;
+    }
+    
+    .container {
+      width: 100%;
+      display: flex;
+    }
+    
+    .header .container {
+      height: 100%;
+      width: 95%;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 18px;
+    }
+    .navbar { 
+      margin-top: 14px;
+      width: 500px;
+      color: rgb(255, 255, 255);
+      list-style: none;
+      align-items: center;
+      display: flex;
+      padding: 0;
+      justify-content: space-between;
+      font-family: Arial, Helvetica, sans-serif
+    }
+     
+    a:link {
+      color: #f2c849;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+    a:visited {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+    a:active {
+      color: #f2c849;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+    .link_a:link {
+      color: #f2c849;
+      background-color: transparent;
+      text-decoration: none;
+     }
+
+    
+     .container2 .card {
+        background-color: white;
+        height: 300px;
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 4px;
+        margin-left: 35%;
+        padding-top: 7%;
+        border-radius: 15px;
+      }
+      button {
+        cursor: pointer;
+      
+            margin-bottom: 10px;
+            border: 2px solid #f2c849;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+      }
+
+      .card h2 {
+        font-size: 30px;
+      }
+
+      .inv {
+          padding-left: 550px;
+          padding-top: 100px;
+      }
+     
+        .subteste {
+            z-index: 100;
+            color: white;
+            padding-top: 8px;
+            padding-left: 150px;
+            font-size: 20px;
+            font-family: sans-serif; 
+            background-color: #DAA520;
+          }
+      
+
+
+
+
+     footer{
+        
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color:rgb(156, 156, 156) ;
+        height: auto;
+        width: 100vw;
+        padding-top: 15px;
+        margin-top: 90px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        
+      
+      }
+      
+      .footer-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .footer-content > h1{
+        font-size: 28px;
+        font-weight: 400x   ;
+        text-transform: capitalize;
+        line-height: 2rem;
+      
+      }
+      
+      .footer-content > p{
+        
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 14px;
+      }
+      
+      .sociais{
+        list-style: none;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin: 16px 0 20px 0;
+      }
+      
+      .sociais > li{
+        margin: 0px 10px;
+      }
+      
+      .sociais > a{
+        text-decoration: none;
+        color:white
+      }
+      
+      .sociais a i {
+        font-size: 18px;
+        transition: color .4s ease;
+      }
+      
+      .sociais a:hover i{
+        color:#ffffff;
+      }
+      
+      .footer-bottom{
+        background: #f2c849;
+        width: 100vw;
+        padding: 10px 0;
+        text-align: center;
+      }
+      
+      .footer-bottom p{
+        font-size: 14px;
+        word-spacing: 2px;
+        text-transform: capitalize;
+      }
+      

@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INICIO - CSME</title>
+    <title>CSGO NO BRASIL - CSME</title>
 </head>
 <body>
 
      <body class="corpo">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="financeiro.css">
         
         <!-- Header -->
         <div class="header">
@@ -60,7 +60,6 @@
                     <li><a href="index.html">Início</a></li>
                     <li><a href="csgo-brasil.html">CS:GO no Brasil</a></li>
                     <li><a href="financeiro.html">Mercado Financeiro</a></li>
-                  
                         
                     </li>
                     <a class="link_a" href="login.html">Entrar</a>
@@ -71,29 +70,45 @@
         </div>
 
         <!-- fim da header -->
+        <div class="banner">
+             <div class="container2"> 
+                <div class="card">
 
-        <div 
-        class="banner1"> 
-        <img class ="fundo1" src="fundo2.png">
+
+           <h2> Simular compra lado TR: </h2>
+            R$<span id="s_gasto">0.00</span>
+            <br>
+         <select id="sel_item">
+            <option value="2700">AK-47</option>
+            <option value="1900">GALLIL-AR</option>
+            <option value="4500">AWP</option>
+            <option value="700">DESERT EAGLE</option>
+            <option value="1100">GRANADAS</option>
+         </select>
+        <br>
+        <button onclick="adicionar()">Adicionar item</button> 
+        <br>
+        <button onclick="limpar()">Vender itens</button>
+    
         </div>
-
-        <div class="bannerm">
-        <h1 class="texto1">CS:GO<br>
-                         POR OUTRO <br>
-                       PONTO DE VISTA</h1>
-
-        </div>
-
-        <div 
-        class="banner2">
-        <div class="imgs">
-       <a href="csgo-brasil.html"> <img class="card1" src="1.png"> </a>
-        <img class="card2" src="csgo (1).png"> 
-        <img class="card3" src="csgo.png"> 
     </div>
-        </div>
+</div>
 
-        <!--Inicio do Footer-->
+<div class="teste1">
+    <img class="inv" src="csgo-skins.jpg" >
+
+    <p class="subteste"> &nbsp; &nbsp; &nbsp;Por mais que um item cosmético de Counter-Strike: Global Offensive seja feito apenas de algumas texturas e linhas de programação, sempre há uma história por trás dele. Onde há a história, há um interesse de uma comunidade de milhões de jogadores que podem se interessar pela skin, faca ou luva.
+        <br>
+        &nbsp; &nbsp; &nbsp; Skins de CS:GO já custaram até R$ 392 mil; veja a lista das mais caras.<br>
+        Em alguns casos, essa combinação de fatores pode fazer esses itens encarecerem a um nível que poucos imaginariam dentro de um jogo. 
+        <br> Você pagaria R$ 7 mil para equipar seu personagem com uma luva? E R$ 10 mil para ter uma M4A4 com uma ilustração de lobo? Talvez você não acredite, mas o mercado de skins pode movimentar
+        <br> mais de US$ 10 bilhões por ano, e um simples item pode custar muito mais do que alguns milhares de reais. <br>
+        
+        &nbsp; &nbsp; &nbsp; Além de gerar um novo mercado, essa febre dos itens cosméticos, que é corriqueira em jogos da Valve, trouxe à tona uma nova cultura no universo de CS:GO: o da ostentação em torno das skins. Por trás das armas, luvas e facas com roupagens especiais, existe todo um cenário de jogadores profissionais e influenciadores que atua para promovê-las - ou promover as lojas responsáveis por sua comercialização.
+
+      
+</div>
+
 
         <footer>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -115,13 +130,22 @@
             </div>
         
         </footer>
-        
 
+    </body>
+    </html>
+    
+    <script>
+    
+    var conta = 0
+    
+    
+    function adicionar() {
+        conta += Number(sel_item.value)
+        s_gasto.innerHTML = conta.toFixed(2)
+    }
+    function limpar() {
 
+        s_gasto.innerHTML = conta = 0
+    }
 
-
-
-
-
-</body>
-</html>
+    </script>
